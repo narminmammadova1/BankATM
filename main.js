@@ -15,7 +15,7 @@ btnEnter.
 addEventListener("click", function () {
     event.preventDefault();
     const value = fullName.value;
-    if(fullName.value==="" || password.value===""){alert("please enter your account and password")
+    if(fullName.value==="" || password.value===""){alert("please enter your fullname and password")
     }
 else{
     customerInfo.
@@ -35,7 +35,7 @@ addEventListener("change", function () {
 function render() {
     firstPage.style.display = "none";
     secondPage.style.display = "block";
-    let content = `Dear <span style="color:red;">${fullName.value}</span>, welcome to AyBank APP.<br>Your Current balance ${balance} $.`;
+    let content = `Dear <span style="color:red;">${fullName.value}</span>, welcome to AyBank ATM.<br>Your Current balance ${balance} $.`;
     welcome.innerHTML = content;
     fullName.value = "";
 }
