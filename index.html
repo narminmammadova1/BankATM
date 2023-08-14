@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bankApp</title>
+<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container" style="display:block;">
+
+        <div id="firstPage" class="row">
+            <div class="col-2">
+                <h1>AyBank <br>ATM</h1>
+                <form action="" id="customer">
+                    <div >
+                        <label for="fullName">FullName</label>
+                        <input id="fullName" name="fullName" placeholder="enter your fullName"  class="form-control">
+                        </div>   
+
+                        <form action="" id="customer">
+                            <div class="checked">
+                                <label for="password">Password</label>
+                                <input id="password" type="password"  name="password" placeholder="enter your password"  class="form-control">
+                               <input type="checkbox" id="chk">show password
+                            </div>
+
+
+            <a href="#" class="btn" id="btnEnter">Enter</a>
+            </div>
+            <div class="col-2" id="circle-ring">
+              <h2 class="ayLogo">AyBank</h2>
+                <div class="ring">
+                <img src="./images/Bank-Transparent.png" alt="">
+                <span class="circle"></span>
+               </div>
+               
+            </div>
+        </div>
+    </div>
+    <div id="secondPage" class="container" style="display: none;">
+        <h2 class="ayBank">AyBank</h2>
+
+<div class="bankApp">
+<h2 class="welcome" > </h2>
+    <div class="addInputDiv">
+    <input id="addInput" type="number" placeholder="enter amount">
+   
+    <button id="btnAdd" class="btn">ADD</button>
+    <button id="btnCash" class="btn">CASH</button>
+<p id="cashMessage"></p>
+
+</div>
+<button class="btn" id="btnExit">Exit</button>
+</div>
+        
+<div id="thirdPage" class="container"
+></div>
+
+    <script src="./constructorBank.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
