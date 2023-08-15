@@ -179,21 +179,19 @@ animation: returnCircle 10s linear infinite;
 
 
     @keyframes returnCircle{
+        0%{transform: rotate(-45deg);
+        }
+
+        100%{
+            transform: rotate(-405deg);
+        }
+    }
+    @keyframes return{
         0%{transform: rotate(0deg);
         }
 
         100%{
-            transform: rotate(360deg);
+            transform: rotate(-360deg);
         }
     }
-    @keyframes return{
-        0%{transform: rotate(45deg);
-        }
-
-        100%{
-            transform: rotate(405deg);
-        }
-    }
-    #thirdPage{display: none;
-        background-image: url(./images/Bank-Transparent.png);
-}
+   
